@@ -20,6 +20,11 @@ class _DisplayNameState extends State<DisplayName> {
 
   @override
   Widget build(context) {
-    return Text(name);
+    return Column(
+      children: [
+        Text(name),
+        OutlinedButton(onPressed: updateName, child: Text('Change name')),
+      ],
+    );
   }
 }
